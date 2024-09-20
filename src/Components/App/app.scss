@@ -1,0 +1,112 @@
+// Colors Variables
+$color-primary: #ff6060;
+$color-white: #ffffff;
+$color-black: black;
+$background-secondary: #f6f6f6;
+$background-tertiary : black;
+
+// Mixin pour Flexbox
+@mixin flex($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+
+.App {
+  min-height: 100vh;
+}
+
+// Body styles
+body {
+  font-family: "Montserrat", sans-serif;
+  
+  margin: auto;
+  padding-top: 40px;
+
+  @media screen and (max-width: 768px) {
+    width: 94%;
+    padding-top: 20px;
+  }
+}
+
+// Classes générales avec mixins
+.center {
+  @include flex();
+}
+
+.around {
+  @include flex(space-around);
+}
+
+.between {
+  @include flex(space-between);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row_evenly {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.column_between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.colorPrimaire {
+  color: $color-primary;
+}
+
+.colorWhite {
+  color: $color-white;
+}
+
+.colorBlack {
+  color: $color-black;
+}
+
+.backPrimaire {
+  background-color: $color-primary;
+}
+
+.backSecondaire {
+  background-color: $background-secondary;
+}
+
+.backTertiary{
+    background-color: $background-tertiary;
+}
+.noDecoration {
+  text-decoration: none;
+}
+
+.noBorder {
+  border: none;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+// Global styles
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
