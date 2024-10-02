@@ -1,0 +1,48 @@
+@mixin position-absolute($top: null, $left: null, $bottom: null, $right: null) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    right: $right;
+  }
+  
+  @mixin responsive-font-size($max-width, $font-size, $width) {
+    @media screen and (max-width: $max-width) {
+      font-size: $font-size;
+      width: $width;
+    }
+  }
+  
+  @mixin card-size($height, $width: 100%) {
+    width: $width;
+    height: $height;
+  }
+  
+  .card {
+    position: relative;
+    @include card-size(400px);
+    border-radius: 10px;
+    overflow: hidden;
+  
+    img {
+      @include position-absolute(0, 0);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    h2 {
+      @include position-absolute(null, 0, 0, null);
+      width: 70%;
+      padding: 10px;
+      font-size: 15px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  
+      @include responsive-font-size(1000px, 14px, 55%);
+    }
+  
+    @media screen and (max-width: 768px) {
+      @include card-size(255px);
+      margin-left: 0;
+    }
+  }
+  

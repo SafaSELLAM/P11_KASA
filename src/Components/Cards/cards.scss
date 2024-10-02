@@ -1,0 +1,19 @@
+@mixin grid-layout($columns, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-gap: $gap;
+  }
+  
+  .cards {
+    padding: 3%;
+    margin: 4%;
+    border-radius: 25px;
+  
+    @include grid-layout(3, 50px); 
+  
+    @media screen and (max-width: 768px) {
+      background-color: white;
+      @include grid-layout(1, 20px); 
+    }
+  }
+  
