@@ -5,9 +5,11 @@ import './app.scss'
 
 export function App() {
     return (
-        <div className="App column">
+        <div className="app column ">
             <Header/>
+            <div className="content">
             <Router />
+            </div>
             <Footer/>
         </div>
     );
