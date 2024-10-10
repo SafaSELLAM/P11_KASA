@@ -1,0 +1,17 @@
+.ratings {
+    margin-top: 10%;
+    @media screen and (max-width: 768px) {
+          height: 18px;
+          width: 18px;
+        }
+  }
+  .rating_star {
+    width: 24px;
+    height: 24px;
+    @media screen and (max-width: 768px) {
+          height: 18px;
+          width: 18px;
+        }
+  }
+
+  
