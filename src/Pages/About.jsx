@@ -9,13 +9,13 @@ const About = () => {
       <div className="bannerAbout">
         <Banner image={aboutBanner} alt="bannière à propos" />
       </div>
-      <div className=" column center">
+      <div className=" column center ">
         {aboutDatas.map((abouts) => (
-          <Collapse
-            collapse_about="collapse_about"
-            key={abouts.id}
-            about={{ title: abouts.title, text: abouts.text, list: false }}
-          />
+          <div className='collapse_about' key={abouts.id}>
+            <Collapse title={abouts.title} type="about">
+              <p>{abouts.text}</p>
+            </Collapse>
+          </div>
         ))}
       </div>
     </div>

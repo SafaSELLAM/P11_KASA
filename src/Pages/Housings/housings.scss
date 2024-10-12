@@ -12,11 +12,18 @@
     display: flex;
     justify-content: space-between;
     margin-top: 2%;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
   }
   .infosHousings h2 {
     font-weight: 500;
     font-size: 30px;
     margin-bottom: 1%;
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+
+    }
   }
   .infosHousings h3 {
     font-weight: 500;
@@ -36,6 +43,7 @@
     border-radius: 10px;
     padding: 2px 15px;
     margin-right: 1%;
+    cursor: default;
   }
   
   .photo_host {
@@ -44,6 +52,9 @@
   }
   @media screen and (max-width: 768px) {
     .infos_logements {
+      width: 100%;
+    }
+    .infosHousings{
       width: 100%;
     }
     .infos_logements h2 {
@@ -91,7 +102,6 @@
       width: 57px;
     }
     .host {
-      width: 34%;
+      width: 40%;
     }
   }
-  

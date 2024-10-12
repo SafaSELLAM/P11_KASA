@@ -1,14 +1,19 @@
 .infosList {
     list-style: none;
   }
-  
+  .collapseClass{
+    width: 100%;
+  }
   .collapse_housing {
     width: 47%;
   }
   
   .collapse_about {
-    width: 85%;
+    width: 80%;
     margin-bottom: 1em;
+    @media screen and (max-width: 768px) {
+     width: 90%;
+    }
   }
   
   .collapseTitle {
@@ -16,6 +21,7 @@
     margin-bottom: -6px;
     padding: 1em;
     border-radius: 10px;
+    cursor: pointer;
   }
   
   .infosTitle {

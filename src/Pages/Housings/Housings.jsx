@@ -18,7 +18,7 @@ export const Housings = () => {
                 <div className="block_infoHousing">
                     <div className="infosHousings">
                         <h2 className="colorPrimaire">{item.title}</h2>
-                        <h3 className="colorPrimaire">{item.location}</h3>
+                        <h3 className="colorBlack">{item.location}</h3>
                         <ul className="tags row">
                             {item.tags.map((tag, index) => (
                                 <li className="backPrimaire colorWhite" key={index}>
@@ -41,18 +41,20 @@ export const Housings = () => {
                     </div>
                 </div>
                 <div className="collapse_block row ">
-                    <Collapse
-                        collapse_housing="collapse_housing"
-                        about={{
-                            title: "Description",
-                            text: item.description,
-                            list: false,
-                        }}
-                    />
-                    <Collapse
-                        collapse_housing="collapse_housing"
-                        about={{ title: "Equipements", text: item.equipments, list: true }}
-                    />
+                    <div className="collapse_housing">
+                        <Collapse title="Description">
+                            <p>{item.description}</p>
+                        </Collapse>
+                    </div>
+                    <div className="collapse_housing">
+                        <Collapse title="Equipements">
+                            <ul className="infosList column">
+                                {item.equipments.map((equipment, index) => (
+                                    <li key={index}>{equipment}</li>
+                                ))}
+                            </ul>
+                        </Collapse>
+                    </div>
                 </div>
             </div>
         </div>
