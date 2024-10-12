@@ -57,8 +57,7 @@
 }
 
 .photo_host {
-  -webkit-clip-path: circle(50%);
-          clip-path: circle(50%);
+  clip-path: circle(50%);
   width: 64px;
 }
 
@@ -116,4 +115,6 @@
   .host {
     width: 40%;
   }
-}/*# sourceMappingURL=housings.css.map */
+}
+
+/*# sourceMappingURL=housings.css.map */
