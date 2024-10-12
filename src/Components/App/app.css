@@ -1,46 +1,37 @@
-// Colors Variables
-$color-primary: #ff6060;
-$color-white: #ffffff;
-$color-black: black;
-$background-secondary: #f6f6f6;
-$background-tertiary : black;
-
-// Mixin pour Flexbox
-@mixin flex($justify: center, $align: center) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-}
-
-
 .app {
   min-height: 100vh;
 }
-.content{
+
+.content {
   flex-grow: 1;
 }
-// Body styles
+
 body {
   font-family: "Montserrat", sans-serif;
-  
   margin: auto;
-
-  @media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
+  body {
     padding-top: 20px;
   }
 }
 
-// Classes générales avec mixins
 .center {
-  @include flex();
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .around {
-  @include flex(space-around);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .between {
-  @include flex(space-between);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .row {
@@ -65,30 +56,30 @@ body {
   justify-content: space-between;
 }
 
-
 .colorPrimaire {
-  color: $color-primary;
+  color: #ff6060;
 }
 
 .colorWhite {
-  color: $color-white;
+  color: #ffffff;
 }
 
 .colorBlack {
-  color: $color-black;
+  color: black;
 }
 
 .backPrimaire {
-  background-color: $color-primary;
+  background-color: #ff6060;
 }
 
 .backSecondaire {
-  background-color: $background-secondary;
+  background-color: #f6f6f6;
 }
 
-.backTertiary{
-    background-color: $background-tertiary;
+.backTertiary {
+  background-color: black;
 }
+
 .noDecoration {
   text-decoration: none;
 }
@@ -101,7 +92,6 @@ body {
   font-weight: 600;
 }
 
-// Global styles
 * {
   box-sizing: border-box;
 }
@@ -109,4 +99,4 @@ body {
 h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   padding: 0;
-}
+}/*# sourceMappingURL=app.css.map */

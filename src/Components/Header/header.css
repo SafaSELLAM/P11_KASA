@@ -1,0 +1,17 @@
+.Header {
+  width: calc(100% - 10em);
+  margin: 0 auto;
+  padding-top: 2%;
+}
+@media screen and (max-width: 768px) {
+  .Header {
+    margin: 0 6%;
+    width: calc(100% - 3em);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo_kasa {
+    height: 37px;
+  }
+}/*# sourceMappingURL=header.css.map */

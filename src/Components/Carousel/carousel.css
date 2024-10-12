@@ -1,0 +1,55 @@
+.carouselWrapper, .carouselContainer {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.imgCarousel {
+  width: 100%;
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+@media screen and (max-width: 768px) {
+  .imgCarousel {
+    height: 250px;
+    border-radius: 10px;
+  }
+}
+
+.imgIndexation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.slide {
+  position: relative;
+  transform: translateY(-191%);
+  margin: 2%;
+}
+@media screen and (max-width: 768px) {
+  .slide {
+    transform: translateY(-506%);
+    height: 19px;
+    padding: 0;
+    margin: 3%;
+  }
+}
+
+.imgIndex {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  font-weight: 500;
+  left: 50%;
+  top: 60%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 768px) {
+  .imgIndex {
+    display: none;
+  }
+}/*# sourceMappingURL=carousel.css.map */

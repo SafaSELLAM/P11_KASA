@@ -1,0 +1,119 @@
+.pageHousing {
+  margin: 4% 0;
+  width: 90%;
+}
+
+.collapse_block {
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2%;
+  position: static;
+}
+
+.block_infoHousing {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+@media screen and (max-width: 768px) {
+  .block_infoHousing {
+    flex-direction: column;
+  }
+}
+
+.infosHousings h2 {
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 1%;
+}
+@media screen and (max-width: 768px) {
+  .infosHousings h2 {
+    font-size: 20px;
+  }
+}
+
+.infosHousings h3 {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 2%;
+}
+
+.host h4 {
+  font-weight: 500;
+  font-size: 18px;
+  width: 94px;
+}
+
+.tags {
+  margin-top: 7%;
+}
+
+.tags li {
+  list-style: none;
+  border-radius: 10px;
+  padding: 2px 15px;
+  margin-right: 1%;
+  cursor: default;
+}
+
+.photo_host {
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  width: 64px;
+}
+
+@media screen and (max-width: 768px) {
+  .infos_logements {
+    width: 100%;
+  }
+  .infosHousings {
+    width: 100%;
+  }
+  .infos_logements h2 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 2%;
+  }
+  .infos_logements h3 {
+    font-size: 14px;
+    margin-bottom: 2%;
+  }
+  .block_info_logement {
+    flex-direction: column;
+    width: 99%;
+  }
+  .tags li {
+    margin-right: 0;
+    margin: 1%;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+  .hostInfos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .hostInfos h4 {
+    font-size: 16px;
+  }
+  .collapse_block {
+    flex-direction: column;
+    width: 100%;
+  }
+  .collapse_title {
+    height: 30px;
+  }
+  .collapse_logement {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  .photo_host {
+    width: 57px;
+  }
+  .host {
+    width: 40%;
+  }
+}/*# sourceMappingURL=housings.css.map */

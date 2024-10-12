@@ -6,11 +6,11 @@ export const Ratings = ({ scaleValue }) => {
     const range = [1, 2, 3, 4, 5];
 
     return (
-        <div className="ratings around">
-            <span key={scaleValue.toString()}>
+        <div className="ratings">
+            <span>
                 {range.map(starRange => scaleValue >= starRange
-                    ? <img className="ratingStar" src={star} alt="ratings" />
-                    : <img className="ratingStar" src={starNull} alt="ratings" />
+                    ? <img key={starRange} className="ratingStar" src={star} alt="ratings" />
+                    : <img key={starRange} className="ratingStar" src={starNull} alt="ratings" />
                 )}
 
             </span>

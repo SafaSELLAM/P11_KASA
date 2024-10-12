@@ -1,0 +1,26 @@
+.ratings {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .ratings {
+    height: 18px;
+    width: 100%;
+    margin: 0;
+    justify-content: flex-start;
+  }
+}
+
+.rating_star {
+  width: 24px;
+  height: 24px;
+}
+@media screen and (max-width: 768px) {
+  .rating_star {
+    height: 18px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=rating.css.map */

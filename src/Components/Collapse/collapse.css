@@ -1,0 +1,50 @@
+.infosList {
+  list-style: none;
+}
+
+.collapseClass {
+  width: 100%;
+}
+
+.collapse_housing {
+  width: 47%;
+}
+
+.collapse_about {
+  width: 80%;
+  margin-bottom: 1em;
+}
+@media screen and (max-width: 768px) {
+  .collapse_about {
+    width: 90%;
+  }
+}
+
+.collapseTitle {
+  position: relative;
+  margin-bottom: -6px;
+  padding: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.infosTitle {
+  font-size: 16px;
+}
+
+.arrows {
+  width: 24px;
+  height: 13px;
+}
+
+.collapseText {
+  background: #f7f7f7;
+  border-radius: 0px 0px 10px 10px;
+  padding: 1em;
+  line-height: 25px;
+}
+@media screen and (max-width: 768px) {
+  .collapseText {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=collapse.css.map */
