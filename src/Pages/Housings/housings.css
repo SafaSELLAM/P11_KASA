@@ -8,6 +8,15 @@
   width: 100%;
   margin-top: 2%;
   position: static;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .collapse_block {
+    flex-direction: column;
+    padding-top: 5%;
+    gap: 30px;
+  }
 }
 
 .block_infoHousing {
@@ -28,17 +37,29 @@
 }
 @media screen and (max-width: 768px) {
   .infosHousings h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 .infosHousings h3 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 2%;
 }
 
+.host {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hostInfos {
+  width: 12%;
+}
+
 .host h4 {
+  text-align: end;
   font-weight: 500;
   font-size: 18px;
   width: 94px;
@@ -50,10 +71,12 @@
 
 .tags li {
   list-style: none;
-  border-radius: 10px;
-  padding: 2px 15px;
-  margin-right: 1%;
+  border-radius: 15px;
+  padding: 5px 20px;
+  margin-right: 2%;
   cursor: default;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .photo_host {
@@ -87,6 +110,7 @@
     border-radius: 5px;
     padding: 4px 8px;
     font-size: 12px;
+    font-weight: 700;
   }
   .hostInfos {
     width: 100%;
@@ -113,7 +137,7 @@
     width: 57px;
   }
   .host {
-    width: 40%;
+    width: 85%;
   }
 }
 

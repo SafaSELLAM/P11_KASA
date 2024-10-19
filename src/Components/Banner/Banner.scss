@@ -8,7 +8,12 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.aboutBannerConatiner{
+  gap: 10px;
+  @media screen and (max-width: 720px) {
+    gap: 20px;
+  }
+}
 .bannerContainer {
   width: 100%;
   height: 100%;
@@ -24,7 +29,7 @@
   margin: 3% auto 2% auto;
   @include border-radius(25px);
   object-fit: cover;
-  filter: brightness(0.5);
+  
 
   @media screen and (max-width: 720px) {
     height: 100%;
@@ -32,14 +37,19 @@
     margin-top: 4%;
   }
 }
-
+.bannerHome img{
+  filter: brightness(0.5);
+}
 .textBanner {
   @include center-absolute;
-  font-size: 35px;
+  font-size: 48px;
+  font-weight: 700;
   display: flex;
 
   @media screen and (max-width: 720px) {
-    font-size: 20px;
+    font-size: 21px;
+    white-space: pre-wrap;
+    transform: translate(-77%, -50%);
   }
 }
 
@@ -49,7 +59,7 @@
   }
 
   .bannerAbout {
-    height: 223px;
+    height: 113px;
     margin-bottom: 4%;
   }
 }

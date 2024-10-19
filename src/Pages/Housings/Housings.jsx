@@ -28,7 +28,7 @@ export const Housings = () => {
                         </ul>
                     </div>
                     <div className="hostInfos">
-                        <div className="host row between">
+                        <div className="host">
                             <h4 className="colorPrimaire">{item.host.name}</h4>
                             <img
                                 src={item.host.picture}
@@ -40,14 +40,14 @@ export const Housings = () => {
                         <Ratings scaleValue={parseInt(item.rating)} />
                     </div>
                 </div>
-                <div className="collapse_block row ">
+                <div className="collapse_block">
                     <div className="collapse_housing">
                         <Collapse title="Description">
                             <p>{item.description}</p>
                         </Collapse>
                     </div>
                     <div className="collapse_housing">
-                        <Collapse title="Equipements">
+                        <Collapse title="Équipements">
                             <ul className="infosList column">
                                 {item.equipments.map((equipment, index) => (
                                     <li key={index}>{equipment}</li>

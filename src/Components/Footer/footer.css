@@ -8,10 +8,22 @@ footer {
 }
 @media screen and (max-width: 720px) {
   .footer {
-    padding-bottom: 5%;
+    padding-bottom: 13%;
+    padding-top: 13%;
   }
 }
 
 .text_footer {
   padding-top: 2%;
-}/*# sourceMappingURL=footer.css.map */
+}
+@media screen and (max-width: 720px) {
+  .text_footer {
+    padding-top: 3%;
+    font-size: 12px;
+    font-weight: 500;
+    width: 33%;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

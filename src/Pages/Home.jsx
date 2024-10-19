@@ -1,4 +1,4 @@
-import  Banner  from '../Components/Banner/Banner' ;
+import Banner from '../Components/Banner/Banner';
 import homeBanner from '../assets/home_banner.png'
 import { Cards } from '../Components/Cards/Cards';
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
       <Cards />
     </div>
   );
- 
-  }
-  
-  export default Home;
+
+}
+
+export default Home;

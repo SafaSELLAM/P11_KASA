@@ -24,16 +24,22 @@
   backdrop-filter: blur(9px);
   background: rgba(0, 0, 0, 0.3);
 }
+@media screen and (max-width: 768px) {
+  .card .cardTitle {
+    height: 22%;
+  }
+}
 .card h2 {
   width: 70%;
   padding: 10px;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 700;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 }
 @media screen and (max-width: 1000px) {
   .card h2 {
-    font-size: 14px;
-    width: 55%;
+    font-size: 16px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {

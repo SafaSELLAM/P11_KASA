@@ -1,5 +1,4 @@
-import star from "../../assets/star_full.png"
-import starNull from "../../assets/star_empty.png"
+import { Star } from "../Star/Star"
 import "./rating.scss"
 
 export const Ratings = ({ scaleValue }) => {
@@ -7,13 +6,9 @@ export const Ratings = ({ scaleValue }) => {
 
     return (
         <div className="ratings">
-            <span>
-                {range.map(starRange => scaleValue >= starRange
-                    ? <img key={starRange} className="ratingStar" src={star} alt="ratings" />
-                    : <img key={starRange} className="ratingStar" src={starNull} alt="ratings" />
-                )}
-
-            </span>
+            {range.map(starRange => (
+                <Star key={starRange} isFilled={scaleValue >= starRange} />
+            ))}
         </div>
     )
 }

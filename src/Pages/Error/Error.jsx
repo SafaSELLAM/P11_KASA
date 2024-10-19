@@ -3,7 +3,7 @@ import "./error.scss"
 
 export const Error = () => {
   return (
-    <div className="error_container between column">
+    <div className="error_container">
       <div className="text_error_container center column">
         <p className="error_text colorPrimaire">404</p>
         <p className="msg_error colorPrimaire">

@@ -38,14 +38,19 @@
       align-items: center;
       backdrop-filter: blur(9px);
       background: rgba(0, 0, 0, 0.3);
+      
+    @media screen and (max-width: 768px) {
+      height: 22%;
     }
+  }
     h2 {
       width: 70%;
       padding: 10px;
-      font-size: 15px;
+      font-size: 18px;
+      font-weight: 700;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
   
-      @include responsive-font-size(1000px, 14px, 55%);
+      @include responsive-font-size(1000px, 16px,100%);
     }
   
     @media screen and (max-width: 768px) {

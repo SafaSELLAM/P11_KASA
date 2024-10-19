@@ -4,11 +4,14 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    gap: 10px;
     @media screen and (max-width: 768px) {
           height: 18px;
           width: 100%;
           margin: 0;
           justify-content: flex-start;
+          gap: 7px;
+          align-items: normal;
         }
   }
   .rating_star {
