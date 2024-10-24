@@ -5,8 +5,8 @@ export const Error = () => {
   return (
     <div className="error_container">
       <div className="text_error_container center column">
-        <p className="error_text colorPrimaire">404</p>
-        <p className="msg_error colorPrimaire">
+        <p className="error_text colorPrimary">404</p>
+        <p className="msg_error colorPrimary">
           Oups! La page que vous demandez n'existe pas.
         </p>
       </div>

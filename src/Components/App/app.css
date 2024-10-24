@@ -10,6 +10,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: auto;
 }
+
 @media screen and (max-width: 768px) {
   body {
     padding-top: 20px;
@@ -56,7 +57,7 @@ body {
   justify-content: space-between;
 }
 
-.colorPrimaire {
+.colorPrimary {
   color: #ff6060;
 }
 
@@ -68,11 +69,11 @@ body {
   color: black;
 }
 
-.backPrimaire {
+.backPrimary {
   background-color: #ff6060;
 }
 
-.backSecondaire {
+.backSecondary {
   background-color: #f6f6f6;
 }
 
@@ -96,7 +97,14 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
   margin: 0;
   padding: 0;
 }

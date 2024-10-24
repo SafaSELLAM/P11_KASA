@@ -1,11 +1,13 @@
 .ratingStar {
   width: 30px;
   height: 30px;
+  margin-right: 10px;
 }
 @media screen and (max-width: 768px) {
   .ratingStar {
     width: 18px;
     height: 18px;
+    margin-right: 7px;
   }
 }
 

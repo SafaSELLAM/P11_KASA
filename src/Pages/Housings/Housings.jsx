@@ -17,11 +17,11 @@ export const Housings = () => {
                 <Carousel pictures={item.pictures} />
                 <div className="block_infoHousing">
                     <div className="infosHousings">
-                        <h2 className="colorPrimaire">{item.title}</h2>
+                        <h2 className="colorPrimary">{item.title}</h2>
                         <h3 className="colorBlack">{item.location}</h3>
                         <ul className="tags row">
                             {item.tags.map((tag, index) => (
-                                <li className="backPrimaire colorWhite" key={index}>
+                                <li className="backPrimary colorWhite" key={index}>
                                     {tag}
                                 </li>
                             ))}
@@ -29,7 +29,7 @@ export const Housings = () => {
                     </div>
                     <div className="hostInfos">
                         <div className="host">
-                            <h4 className="colorPrimaire">{item.host.name}</h4>
+                            <h4 className="colorPrimary">{item.host.name}</h4>
                             <img
                                 src={item.host.picture}
                                 alt={item.host.picture}

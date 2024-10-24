@@ -34,20 +34,23 @@
   }
   .infosHousings h3 {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 2%;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
   }
   .host{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     @media screen and (max-width: 768px) {
       width: 85%;
     }
   }
   .hostInfos{
-    width: 12%;
+    width: 15%;
     @media screen and (max-width: 768px) {
       width: 100%;
       display: flex;
@@ -61,13 +64,17 @@
   text-align: end;
     font-weight: 500;
     font-size: 18px;
-    width: 94px;
+    margin-right: 4%;
+    width: 40%;
     @media screen and (max-width: 768px) {
       font-size: 16px;
     }
   }
   .tags {
-    margin-top: 7%;
+    margin-top: 3%;
+    @media screen and (max-width: 768px) {
+      margin-top: 7%;
+    }
   }
   .tags li {
     list-style: none;

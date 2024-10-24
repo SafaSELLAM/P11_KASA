@@ -10,7 +10,7 @@ export const Collapse = ({ title, type, children }) => {
     }
     return (
         <div className="collapseClass">
-            <div className="collapseTitle between center backPrimaire" onClick={toggle}>
+            <div className="collapseTitle between center backPrimary" onClick={toggle}>
                 <h2 className="infosTitle colorWhite">{title}</h2>
                 <img src={open ? ArrowUp : ArrowDown} alt="flèche" className="arrows" />
             </div>
