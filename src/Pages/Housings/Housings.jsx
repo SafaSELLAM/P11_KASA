@@ -29,7 +29,14 @@ export const Housings = () => {
                     </div>
                     <div className="hostInfos">
                         <div className="host">
-                            <h4 className="colorPrimary">{item.host.name}</h4>
+                            <h4 className="colorPrimary">
+                                {item.host.name.split(" ").map((part, index) => (
+                                    <span key={index}>
+                                        {part}
+                                        {index !== item.host.name.split(" ").length - 1 && <br />}
+                                    </span>
+                                ))}
+                            </h4>
                             <img
                                 src={item.host.picture}
                                 alt={item.host.picture}
